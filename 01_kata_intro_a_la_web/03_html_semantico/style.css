@@ -1,0 +1,28 @@
+nav {
+    background: green;
+    color: red;
+}
+li {
+    background: white;
+}
+a:hover {
+    color: blue;
+}
+
+section {
+    background: pink;
+}
+
+div {
+    background: blue;
+}
+p {
+    text-align: center;
+}
+
+footer {
+    background: black;
+}
+span {
+    color: white;
+}
