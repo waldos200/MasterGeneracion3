@@ -1,0 +1,25 @@
+*{
+    background-color: bisque;
+}
+
+body {
+    margin: 0px;
+}
+
+header, h2, ul, li, a {
+    background-color: aqua;
+    margin: 0px;
+}
+
+main{
+    background-color: bisque;
+    text-align: center;
+}
+
+img {
+    height: 400px;
+}
+
+footer {
+    background-color: aqua;
+}
