@@ -28,6 +28,10 @@ h2 {
     margin: 20px   100px    50px      80px;
 }
 
+div{
+    border: pink 2px solid;
+    margin-left: 766px;
+}
 
 a {
     border: blue 2px solid;
