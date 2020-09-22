@@ -1,0 +1,21 @@
+.padre {
+    border: black 3px solid;
+    height: 500px;
+    display: flex;
+    /* Acomoda elementos horizontalmente */
+    justify-content: center;
+    /* Acomoda elementos verticalmente */
+    align-items: center;
+}
+
+.hijo {
+    border: red 3px solid;
+    height: 100px;
+    width: 100px;
+}
+
+.hijo2 {
+    border: blue 3px solid;
+    height: 100px;
+    width: 100px;
+}
