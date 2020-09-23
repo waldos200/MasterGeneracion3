@@ -1,0 +1,27 @@
+body{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    background-color: pink;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 1px gray solid;
+}
+
+.boton {
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    background-color: chartreuse;
+    border-radius: 25px;
+    height: 25px;
+    width: 200px;
+    border: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
