@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <p>Especialidad</p>
+            <input placeholder="Especialidad" type="text" list="pizas">
+            <datalist id="pizas">
+                <option>Peperoni</option>
+                <option>Jamon</option>
+                <option>Tres Quesos</option>
+                <option>Hawaiana</option>
+            </datalist>
+        </div>
+        <div>
+            <span>Desea Mas ingredientes </span>
+            <input type="radio" value="true" name="group1"> si
+            <input type="radio" value="false" name="group1"> no
+        </div>
+        <div>
+            <p>Si quiere mas ingredientes cual desea</p>
+            <input placeholder="Ingredientes" type="text" list="piza">
+            <datalist id="piza">
+                <option>Peperoni</option>
+                <option>Jamon</option>
+                <option>Aceitunas</option>
+                <option>Hongos</option>
+            </datalist>
+        </div>
+        <div>
+            <p>Programa tu entrega: </p>
+            <input type="date" name="" id="">
+            <input type="time" name="" id="">
+        </div>
+        <div>
+            <p>Algun comentario</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
