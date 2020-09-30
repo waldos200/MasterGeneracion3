@@ -1,0 +1,92 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica,
+    ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo,
+    ＭＳ Ｐゴシック, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  color: #211922;
+  font-size: 12px;
+}
+.container {
+  width: 99%;
+  border: 5px red solid;
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  display: flex;
+  width: 10%;
+  border: 2px #ff00b3 solid;
+  padding-left: 1px;
+}
+.main {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+}
+
+.mainBox {
+  width: 50%;
+  height: 80%;
+  border-top-left-radius: 2px;
+  border: 2px lightgray solid;
+  display: flex;
+  justify-content: flex-start;
+}
+.right {
+  width: 50%;
+}
+.left {
+  border: 5px royalblue solid;
+  width: 50%;
+}
+.options {
+  display: flex;
+  align-items: center;
+}
+.descTxt {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icons {
+  border: 2px springgreen solid;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: 2px yellow solid;
+  display: flex;
+  justify-content: flex-end;
+}
+.btnOptions {
+  background: red;
+  color: white;
+  border-radius: 40px;
+}
+.btnFollow {
+  border-radius: 50%;
+  width: auto;
+  height: 30px;
+}
+.description {
+  border: 2px orangered solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgOptions {
+  width: 25px;
+  height: 25x;
+}
+.tablero {
+  width: 40px;
+  border-radius: 50px;
+}
+.inpComment {
+  border-radius: 50px;
+  width: 80%;
+}
