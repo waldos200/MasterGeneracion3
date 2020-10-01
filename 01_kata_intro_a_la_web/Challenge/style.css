@@ -1,6 +1,6 @@
 .contenedor {
-  padding: 10px;
-  height: 1200px;
+  padding: 10px 50px;
+  height: 1300px;
   display: flex;
   flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
   justify-content: flex-start;
@@ -8,94 +8,104 @@
 }
 
 .img1 {
-    margin: 1%;
+    margin: 10px;
 }
 
 .img1-1 {
     width: 300px;
     height: 500px;
+    border-radius: 25px;
 }
 
 .img2 {
-    margin: 1%;
+    margin: 10px;
 }
 
 .img2-2 {
     width: 300px;
     height: 500px;
+    border-radius: 25px;
 }
 
 .img3 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img3-3{
     width: 300px;
     height: 500px;
+    border-radius: 25px;
 }
 
 .img4 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img4-4 {
     width: 300px;
     height: 500px;
+    border-radius: 25px;
 }
 
 .img5 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img5-5{
     width: 300px;
     height: 500px;
+    border-radius: 25px;
 }
 
 .img6 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img6-6 {
     width: 300px;
+    border-radius: 25px;
 }
 
 .img7 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img7-7 {
     width: 300px;
+    border-radius: 25px;
 }
 
 .img8 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img8-8 {
     width: 300px;
+    border-radius: 25px;
 }
 
 .img9 {
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img9-9 {
     width: 300px;
+    border-radius: 25px;
 }
 
 .img10{
     width: 300px;
-    margin: 1%;
+    margin: 10px;
 }
 
 .img10-10 {
     width: 300px;
+    border-radius: 25px;
 }
