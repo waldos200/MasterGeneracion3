@@ -1,6 +1,7 @@
 .contenedor {
   padding: 10px 50px;
   height: 1300px;
+  width: auto;
   display: flex;
   flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
   justify-content: flex-start;
