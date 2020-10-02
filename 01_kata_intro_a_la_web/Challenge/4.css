@@ -22,11 +22,10 @@ width: 100%;
 .searchbar{ 
     font-family:-apple-system,BlinkMacSystemFont;
     font-size:16px;font-weight:normal;
-    width: 500px;
+    width: 900px;
     height: 40px;
     background-color:whitesmoke;
     border: thin;
-    width: 550px;
     z-index: 10;
     border-radius: 10px;
 }
