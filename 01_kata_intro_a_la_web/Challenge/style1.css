@@ -1,14 +1,16 @@
 .container {
   width: 100%;
-  border: 5px red solid;
+  /* border: 5px red solid; */
   display: flex;
   justify-content: center;
 }
-
+.container::before {
+  padding-top: 20px;
+}
 .back {
   display: flex;
   width: 10%;
-  border: 2px #ff00b3 solid;
+  /* border: 2px #ff00b3 solid; */
   padding-left: 1px;
 }
 .space {
@@ -21,7 +23,7 @@
 }
 
 .mainBox {
-  height: 75%;
+  height: 92%;
   border-top-left-radius: 2px;
   border: 2px lightgray solid;
   display: flex;
@@ -30,7 +32,7 @@
   width: 50%;
 }
 .left {
-  border: 5px royalblue solid;
+  /* border: 5px royalblue solid; */
   width: 50%;
 }
 .options {
@@ -38,12 +40,12 @@
   align-items: center;
 }
 .descTxt {
-  border: peru 2px solid;
+  /* border: peru 2px solid; */
   display: flex;
   flex-wrap: wrap;
 }
 .icons {
-  border: 2px springgreen solid;
+  /* border: 2px springgreen solid; */
   width: 100%;
   height: 50px;
   display: flex;
@@ -51,7 +53,7 @@
 }
 
 .btn {
-  border: 2px yellow solid;
+  /* border: 2px yellow solid; */
   display: flex;
   justify-content: flex-end;
 }
@@ -66,7 +68,6 @@
   height: 30px;
 }
 .description {
-  border: 2px orangered solid;
   display: flex;
   flex-direction: column;
 }
@@ -82,17 +83,13 @@
   border-radius: 50px;
   width: 80%;
 }
-.more {
-  border: skyblue 2px solid;
+
+.title {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.title{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/*
 .contenedor {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -114,7 +111,7 @@
 }
 
 .img4 {
-  width: 460px;
+  width: 400px;
   border-radius: 50px 50px;
 }
 
@@ -145,5 +142,116 @@
 
 .img10 {
   width: 400px;
+  border-radius: 50px 50px;
+} */
+.contenedor {
+  padding: 10px;
+  height: 1200px;
+  display: flex;
+  flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.img1 {
+  margin: 1%;
+  border-radius: 50px 50px;
+}
+
+.img1-1 {
+  width: 300px;
+  height: 500px;
+  border-radius: 50px 50px;
+}
+
+.img2 {
+  margin: 1%;
+}
+
+.img2-2 {
+  width: 300px;
+  height: 500px;
+  border-radius: 50px 50px;
+}
+
+.img3 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img3-3 {
+  width: 300px;
+  height: 500px;
+  border-radius: 50px 50px;
+}
+
+.img4 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img4-4 {
+  width: 300px;
+  height: 500px;
+  border-radius: 50px 50px;
+}
+
+.img5 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img5-5 {
+  width: 300px;
+  height: 500px;
+  border-radius: 50px 50px;
+}
+
+.img6 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img6-6 {
+  width: 300px;
+  border-radius: 50px 50px;
+}
+
+.img7 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img7-7 {
+  width: 300px;
+  border-radius: 50px 50px;
+}
+
+.img8 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img8-8 {
+  width: 300px;
+  border-radius: 50px 50px;
+}
+
+.img9 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img9-9 {
+  width: 300px;
+  border-radius: 50px 50px;
+}
+
+.img10 {
+  width: 300px;
+  margin: 1%;
+}
+
+.img10-10 {
+  width: 300px;
   border-radius: 50px 50px;
 }
