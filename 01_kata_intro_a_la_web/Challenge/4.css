@@ -1,148 +1,177 @@
-.topnav{
+.topnav {
     border: solid 2px transparent;
-height: 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
-.home{
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.following{
+
+.home {
     font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: black;
     font-weight: bolder;
     text-decoration: none;
 }
 
-.searchbar{ 
-    font-family:-apple-system,BlinkMacSystemFont;
-    font-size:16px;font-weight:normal;
+.following {
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.searchbar {
+    font-family: -apple-system, BlinkMacSystemFont;
+    font-size: 16px;
+    font-weight: normal;
     width: 900px;
     height: 40px;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     border: thin;
     z-index: 10;
     border-radius: 10px;
 }
 
-.notifications{
+.notifications {
     height: 30px;
 }
-.message{
+
+.message {
     height: 40px;
 }
 
-.profile{
+.profile {
     height: 40px;
 }
-.container{display: flex;
-flex-direction: row;
-justify-content: left;
-height: 1000px;
-width: 1200px;
-border: solid 2px transparent;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 1000px;
+    width: 1200px;
+    border: solid 2px transparent;
 }
 
-.button{height: 50px;
+.button {
+    height: 50px;
     width: 100px;
     border-radius: 50%;
 }
 
-.foryou{
+.foryou {
     height: 35px;
     width: 35px;
     border-radius: 100%;
-    background-color:transparent;
+    background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     border: transparent;
     font-size: larger;
     font-weight: 900;
 }
-.Photo{height: 800px;
+
+.Photo {
+    height: 800px;
     width: 600px;
-border: solid 2px transparent;
-box-shadow: 4px 4px lightgray;
-border-right-style: none;
-display: flex;
-align-items: center;
-justify-content: center;
-border-top-left-radius: 30%;
-border-bottom-left-radius: 30%;
-background-size: cover;
-background-image: url(https://i.pinimg.com/564x/80/c5/47/80c547d1126501f498cec8432e8e2def.jpg);
+    border: solid 2px transparent;
+    box-shadow: 4px 4px lightgray;
+    border-right-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/564x/80/c5/47/80c547d1126501f498cec8432e8e2def.jpg);
 }
 
-.icons{
+.Photo1 {
+    height: 800px;
+    width: 600px;
+    border: solid 2px transparent;
+    box-shadow: 4px 4px lightgray;
+    border-right-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-size: cover;
+}
+
+.icons {
     display: flex;
     flex-direction: row;
     height: 60px;
 }
 
-.dots{
-    height: 50px;
-}
-.share{
+.dots {
     height: 50px;
 }
 
-.save{
+.share {
     height: 50px;
 }
 
-.text2{
+.save {
+    height: 50px;
+}
+
+.text2 {
     text-align: left;
 }
-.Tony{
+
+.Tony {
     font-size: xx-large;
     font-weight: bolder;
     justify-content: left;
     font-family: Arial, Helvetica, sans-serif;
 }
-.text{width: 600px;
+
+.text {
+    width: 600px;
     height: 800px;
-border: solid 2px transparent;
-box-shadow: 4px 4px 4px lightgray;
-text-align-last: left;
-font-size: smaller;
-font-family: Arial, Helvetica, sans-serif;
-display: flex;
-justify-content: left;
-align-items: baseline;
-border-top-right-radius: 30%;
-border-bottom-right-radius: 30%;
+    border: solid 2px transparent;
+    box-shadow: 4px 4px 4px lightgray;
+    text-align-last: left;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 
-.commentbuttons{
-   display: flex;
-   flex-direction: row;
+.commentbuttons {
+    display: flex;
+    flex-direction: row;
 }
 
-.commenticon{
-    
+.commenticon {
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.comments{
-    background-color:transparent;
+.comments {
+    background-color: transparent;
     border: thin;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     font-weight: bolder;
     border: lightgrey;
 }
-.text2{
+
+.text2 {
     display: flex;
     flex-direction: column;
 }
 
 
-.pinterest{height: 80%;
+.pinterest {
+    height: 80%;
 }
 
 .contenedor {
@@ -150,110 +179,111 @@ border-bottom-right-radius: 30%;
     height: 1300px;
     width: auto;
     display: flex;
-    flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
+    flex-flow: column wrap;
+    /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
     justify-content: flex-start;
     align-items: flex-start;
-  }
-  
-  .img1 {
-      margin: 10px;
-  }
-  
-  .img1-1 {
-      width: 300px;
-      height: 500px;
-      border-radius: 25px;
-  }
-  
-  .img2 {
-      margin: 10px;
-  }
-  
-  .img2-2 {
-      width: 300px;
-      height: 500px;
-      border-radius: 25px;
-  }
-  
-  .img3 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img3-3{
-      width: 300px;
-      height: 500px;
-      border-radius: 25px;
-  }
-  
-  .img4 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img4-4 {
-      width: 300px;
-      height: 500px;
-      border-radius: 25px;
-  }
-  
-  .img5 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img5-5{
-      width: 300px;
-      height: 500px;
-      border-radius: 25px;
-  }
-  
-  .img6 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img6-6 {
-      width: 300px;
-      border-radius: 25px;
-  }
-  
-  .img7 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img7-7 {
-      width: 300px;
-      border-radius: 25px;
-  }
-  
-  .img8 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img8-8 {
-      width: 300px;
-      border-radius: 25px;
-  }
-  
-  .img9 {
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img9-9 {
-      width: 300px;
-      border-radius: 25px;
-  }
-  
-  .img10{
-      width: 300px;
-      margin: 10px;
-  }
-  
-  .img10-10 {
-      width: 300px;
-      border-radius: 25px;
-  }
+}
+
+.img1 {
+    margin: 10px;
+}
+
+.img1-1 {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.img2 {
+    margin: 10px;
+}
+
+.img2-2 {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.img3 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img3-3 {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.img4 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img4-4 {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.img5 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img5-5 {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.img6 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img6-6 {
+    width: 300px;
+    border-radius: 25px;
+}
+
+.img7 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img7-7 {
+    width: 300px;
+    border-radius: 25px;
+}
+
+.img8 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img8-8 {
+    width: 300px;
+    border-radius: 25px;
+}
+
+.img9 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img9-9 {
+    width: 300px;
+    border-radius: 25px;
+}
+
+.img10 {
+    width: 300px;
+    margin: 10px;
+}
+
+.img10-10 {
+    width: 300px;
+    border-radius: 25px;
+}
