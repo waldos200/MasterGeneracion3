@@ -47,6 +47,7 @@ console.log(persona.nombre);
 console.log(persona.musica.rock);
 console.log(persona.peliculas[2]);
 
+// arreglo de objetos
 var animales =[
     {
         nombre: "Vaca",
