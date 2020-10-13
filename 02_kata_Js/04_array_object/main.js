@@ -64,7 +64,7 @@ var animales =[
         nombre: "Murcielago",
         comida: true
     }
-]
+];
 
 console.log(animales);
 console.log(animales[3]);
