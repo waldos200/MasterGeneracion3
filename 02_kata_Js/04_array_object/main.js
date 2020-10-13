@@ -24,6 +24,10 @@ color.pop();
 console.log(color);
 
 // .splice();
+// 1 donde vamos a empezar
+// 2 cuantos elementos
+// 3 sustituir
+//           1  2         3
 color.splice(2, 0, "Cafe", "Rojo");
 console.log(color);
 
