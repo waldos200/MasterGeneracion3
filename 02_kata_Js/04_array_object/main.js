@@ -27,3 +27,45 @@ console.log(color);
 color.splice(2, 0, "Cafe", "Rojo");
 console.log(color);
 
+// ----------- objetos o objects -----------
+// var objeto = {}
+var persona = {
+    nombre: "Waldo",
+    edad: 20,
+    cel: "+503 24679345",
+    musica: {
+        banda: "Banda",
+        Kpop: "K-pop",
+        rock: "Kiss",
+        trap: "Duki"
+    },
+    peliculas: ["RF1", "RF2", "RF3", "RF10"]
+};
+
+console.log(persona.edad);
+console.log(persona.nombre);
+console.log(persona.musica.rock);
+console.log(persona.peliculas[2]);
+
+var animales =[
+    {
+        nombre: "Vaca",
+        comida: true
+    },
+    {
+        nombre: "Aguila",
+        comida: false
+    },
+    {
+        nombre: "Ballena",
+        comida: false
+    },
+    {
+        nombre: "Murcielago",
+        comida: true
+    }
+]
+
+console.log(animales);
+console.log(animales[3]);
+console.log(animales[3].nombre);
