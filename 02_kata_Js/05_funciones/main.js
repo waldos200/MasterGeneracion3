@@ -26,7 +26,11 @@ console.log(saludar2("Waldo", "Mendoza"));
 // Ejercicio 1
 // hacer una funcion que sume dos parametros
 function sumar(n1, n2) {
-    return (n1 + n2);
+    if (typeof n1 === "number" && typeof n2 === "number"){
+        return (n1 + n2);
+    } else {
+        return "No son numeros";
+    }
 }
 console.log(sumar(2, 3));
 
