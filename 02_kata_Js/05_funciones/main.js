@@ -48,10 +48,14 @@ console.log(restar(8, 2));
 // Ejercicio 3
 // hacer una funcion que me indique si soy mayor de edad o no
 function mayorEdad(edad) {
-    if (edad >= 18) {
-        return "Eres mayor de edad";
+    if (typeof edad === "number"){
+        if (edad >= 18) {
+            return "Eres mayor de edad";
+        } else {
+            return "No eres mayor de edad";
+        }
     } else {
-        return "No eres mayor de edad";
+        return "Digite un numero";
     }
 }
 console.log(mayorEdad(17));
