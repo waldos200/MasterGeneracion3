@@ -37,7 +37,11 @@ console.log(sumar(2, 3));
 // Ejercicio 2
 // hacer una funcion que reste dos parametros
 function restar(n1, n2) {
-    return (n1 - n2);
+    if (typeof n1 === "number" && typeof n2 === "number"){
+        return (n1 + n2);
+    } else {
+        return "No son numeros";
+    }
 }
 console.log(restar(8, 2));
 
