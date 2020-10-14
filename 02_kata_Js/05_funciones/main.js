@@ -23,3 +23,10 @@ function saludar2(name, lastName) {
 
 console.log(saludar2("Waldo", "Mendoza"));
 
+// Ejercicio 1
+// hacer una funcion que sume dos parametros
+function sumar(n1, n2) {
+    return (n1 + n2);
+}
+console.log(sumar(2, 3));
+
