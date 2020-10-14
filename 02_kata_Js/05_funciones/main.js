@@ -48,3 +48,16 @@ function mayorEdad(edad) {
 }
 console.log(mayorEdad(17));
 
+// Ejercicio 4
+// hacer una funcion que evalue si el numero es 0, positivo o negativo
+function evaluar(num) {
+    if (num === 0) {
+        return "El valor es cero"
+    } else if (num > 0) {
+        return "El numero es positivo";
+    } else {
+        return "El numero es negativo";
+    }
+}
+console.log(evaluar(11));
+
