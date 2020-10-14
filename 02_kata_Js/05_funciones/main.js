@@ -61,3 +61,16 @@ function evaluar(num) {
 }
 console.log(evaluar(11));
 
+// Ejercicio 5
+// hacer una funcion que retorne si es vocal o consonante
+function vocales(letra) {
+    if (letra !== "string") {
+        if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+            console.log("Es una vocal");
+        } else {
+            console.log("Es una consonante");
+        }
+    }
+}
+vocales("e");
+
