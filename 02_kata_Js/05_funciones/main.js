@@ -81,6 +81,7 @@ console.log(evaluar(11));
 // hacer una funcion que retorne si es vocal o consonante
 function vocales(letra) {
     if (typeof letra === "string") {
+        letra = letra.toLowerCase();
         if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
             console.log("Es una vocal");
         } else {
