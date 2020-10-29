@@ -2,19 +2,40 @@
     background-color: pink;
 }
 
+.btn.nav{
+    
+}
+
 h1 {
     display: flex;
     justify-content: center;
 }
 
-.tarjetas{
-
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.tarjeta {
+.imagenPoke{
+    width: 256px;
+    border-radius: 10px;
+}
+
+.contenedores {
     width: 260px;
     margin: 10px;
     padding: 0px;
     border: solid white 2px;
     border-radius: 10px;
+    background-color: pink;
+}
+
+h5 {
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
 }
