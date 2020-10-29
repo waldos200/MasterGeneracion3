@@ -4,23 +4,8 @@ var generarPoke = document.getElementById('boton');
 function obtenerPokemons() {
     var pokem = Pokemon();
 
-    // Devuelve lo que se le pide pero no muetra todos solamente muestra el ultimo 
-    for (var i = 0; i <= 150; i++) {
-        var pokeName = document.getElementById('name');
-        pokeName.innerHTML = pokem[i].name.toUpperCase();
-
-        var pokeId = document.getElementById('pkdx_id');
-        pokeId.innerHTML = "# " + pokem[i].pkdx_id;
-
-        var pokeImg = document.getElementById('art_url');
-        pokeImg.src = pokem[i].art_url;
-
-        var pokeType = document.getElementById('types');
-        pokeType.innerHTML = "Tipos: " + pokem[i].types;
-    }
-
     // no genera lo que se le pide y paraece raro que no lo haga
-    /* for (var i = 0; i <= 150; i++) {
+    for (var i = 0; i <= 150; i++) {
         var pokeContenedor = document.createElement('div');
         pokeContenedor.classList.add('contenedor');
 
@@ -41,8 +26,8 @@ function obtenerPokemons() {
 
         pokeContenedor.append(pokeImg, pokeName, pokeId, pokeType);
 
-        allPokemonContainer.append(pokeContainer);
-    } */
+        allPokemonContainer.appendChild(pokeContenedor);
+    }
 }
 
 // se hace una funcion para que pueda obtener todo lo que esta en la funcion 
