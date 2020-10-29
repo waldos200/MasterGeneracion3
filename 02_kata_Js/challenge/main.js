@@ -4,13 +4,10 @@ var generarPoke = document.getElementById('boton');
 function obtenerPokemons() {
     var pokem = Pokemon();
 
-    // no genera lo que se le pide y paraece raro que no lo haga
+    // genera a todos los pokemons en orden y crea los elementos
     for (var i = 0; i <= 150; i++) {
         var pokeContenedor = document.createElement('div');
         pokeContenedor.classList.add('contenedor');
-
-        // var pokeContainerIMG = document.createElement('div');
-        // pokeContainerIMG.classList.add('img-poke');
 
         var pokeName = document.createElement('h4');
         pokeName.innerHTML = pokem[i].name.toUpperCase();
