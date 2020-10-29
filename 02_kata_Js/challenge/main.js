@@ -5,7 +5,7 @@ function obtenerPokemons() {
     var pokem = Pokemon();
 
     // Devuelve lo que se le pide pero no muetra todos solamente muestra el ultimo 
-    for (var i = 0; i < 150; i++) {
+    for (var i = 0; i <= 150; i++) {
         var pokeName = document.getElementById('name');
         pokeName.innerHTML = pokem[i].name.toUpperCase();
 
