@@ -7,7 +7,7 @@ function Pokemon() {
       __v: 3,
       image_url: "http://pokeapi.co/media/img/1.png",
       description: "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
-      art_url: "http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png,",
+      art_url: "http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png",
       types: [
         "poison",
         "grass"
