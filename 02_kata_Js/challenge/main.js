@@ -10,7 +10,7 @@ function obtenerPokemons() {
         pokeName.innerHTML = pokem[i].name.toUpperCase();
 
         var pokeId = document.getElementById('pkdx_id');
-        pokeId.innerHTML = pokem[i].pkdx_id;
+        pokeId.innerHTML = "# " + pokem[i].pkdx_id;
 
         var pokeImg = document.getElementById('art_url');
         pokeImg.src = pokem[i].art_url;
@@ -41,7 +41,7 @@ function obtenerPokemons() {
 
         pokeContenedor.append(pokeImg, pokeName, pokeId, pokeType);
 
-        allPokemonContainer.appendChild(pokeContainer);
+        allPokemonContainer.append(pokeContainer);
     } */
 }
 
