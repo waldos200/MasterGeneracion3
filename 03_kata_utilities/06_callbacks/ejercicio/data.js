@@ -19,6 +19,10 @@ const salarios = [{
     {
         id: 2,
         salario: 3000,
+    },
+    {
+        id: 3,
+        salario: 4000,
     }
 ];
 module.exports = {
