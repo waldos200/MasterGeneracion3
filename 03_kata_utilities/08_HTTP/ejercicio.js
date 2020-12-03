@@ -15,3 +15,21 @@ const getAuthors = (id) => {
 
 // getAuthors(13479);
 
+
+// GET
+const getAllAuthors = () => {
+    return new Promise((resolve, reject) => {
+        request.get(`${URL_BASE}/api/v1/authors/`, (err, res, body) => {
+            if (res.statusCode === 200) {
+                const data = JSON.parse(body);
+                return resolve(data)
+            } else {
+                return reject(err)
+            }
+        });
+    })
+}
+
+// getAllAuthors()
+//     .then((data) => console.log(data))
+//     .catch((error) => console.log(error));
