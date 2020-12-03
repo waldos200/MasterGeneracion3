@@ -48,3 +48,4 @@ const createAuthor = (name, last_name, nacionalidad, biography, gender, age, isA
 }
 
 // createAuthor("Juan", "Guarnizo", "MX", "Streamer", "M", 22, true)
+// 13479
