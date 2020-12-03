@@ -76,3 +76,17 @@ const updateAuthor = (name, last_name, nacionalidad, biography, gender, age, isA
 }
 
 // updateAuthor("Angel", "Tengo hambre, ya comi", "ES", "Soy tu padre", "F", 10, false, 12854);
+
+// DELETE
+const deleteAuthor = (id) => {
+    const URL_DELETE = `${URL_BASE}/api/v1/authors/${id}/`;
+
+    request.delete(URL_DELETE, (err, res, body) => {
+        if(res.statusCode === 204){
+            console.log("Se elimino el usuario");
+        } else {
+            console.log(err, "No se pudo borrar");
+        }
+    })
+}
+// deleteAuthor(12898);
