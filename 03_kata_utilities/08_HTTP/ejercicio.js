@@ -89,3 +89,22 @@ const updateAuthor = (name, last_name, nacionalidad, biography, gender, age, isA
 // updateAuthor("Angel", "Tengo hambre", "ES", "Soy tu padre", "F", 10, false, 12854)
 //     .then((cambio) => console.log(cambio))
 //     .catch((error) => console.log(error))
+
+// DELETE
+const deleteAuthor = (id) => {
+    const URL_DELETE = `${URL_BASE}/api/v1/authors/${id}/`;
+
+    return new Promise((resolve, reject) => {
+        request.delete(URL_DELETE, (err, res, body) => {
+            if(res.statusCode === 204){
+                return resolve("Se elimino exitosamente")
+            } else {
+                return reject(err, "No se pudo borrar");
+            }
+        })
+    })
+}
+
+// deleteAuthor(3072)
+//     .then((borrado) => console.log(borrado))
+//     .catch((error) => console.log(error))
