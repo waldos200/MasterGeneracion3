@@ -61,3 +61,31 @@ const createAuthor = (name, last_name, nacionalidad, biography, gender, age, isA
 // createAuthor("Samuel", "Mendoza", "USA", "Ya esta noche", "M", 20, true)
 //     .then((autor) => console.log(autor))
 //     .catch((error) => console.log(error));
+
+// UPDATE
+const updateAuthor = (name, last_name, nacionalidad, biography, gender, age, isAlive, id) => {
+    const URL_PUT = `${URL_BASE}/api/v1/authors/${id}/`;
+    const jsonSend = {
+        "name": name,
+        "last_name": last_name,
+        "nacionalidad": nacionalidad,
+        "biography": biography,
+        "gender": gender,
+        "age": age,
+        "is_alive": isAlive
+    }
+    return new Promise((resolve, reject) => {
+        request.put(URL_PUT, {form : jsonSend}, (err, res, body) => {
+            if(res.statusCode === 200){
+                const upAuthor = JSON.parse(body);
+                return resolve(upAuthor)
+            } else {
+                return reject(err)
+            }
+        })
+    })
+}
+
+// updateAuthor("Angel", "Tengo hambre", "ES", "Soy tu padre", "F", 10, false, 12854)
+//     .then((cambio) => console.log(cambio))
+//     .catch((error) => console.log(error))
