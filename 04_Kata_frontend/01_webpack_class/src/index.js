@@ -6,4 +6,5 @@ import saludo from './saludo';
 
 console.log('Este es un CLG');
 
-saludo('Buenas...');
+const respuesta = saludo('Buenas...');
+console.log(respuesta);
