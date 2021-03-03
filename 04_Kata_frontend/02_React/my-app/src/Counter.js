@@ -11,12 +11,23 @@ class Counter extends React.Component {
         // El constructor recibe como argumento las propieades -> props
         // Atributos asignados cuando llamamos el componente en un componente padre 
         super(props);
+        this.state = {
+            cout: parseInt(props.init)
+        }
     }
 
     render(){
         return (
             <>
-            <h1>Hola es mi contador</h1>
+            {/* En jsx la apertura de llaves significa que abra codigo de js que devolera un valor */}
+            <h1>{this.props.title}</h1>
+            <button onClick={() => { this.setState({cout:this.state.cout + 1}) }}>
+                Sumar
+            </button>
+            <button onClick={()=>{this.setState({cout:this.state.cout -1})}}>
+                Restar
+            </button>
+            <h4>{this.state.cout}</h4>
             </>
         )
     }
