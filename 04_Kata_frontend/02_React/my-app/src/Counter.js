@@ -28,6 +28,9 @@ class Counter extends React.Component {
             <button onClick={()=>{this.setState({cout:this.state.cout -1})}}>
                 Restar
             </button>
+            <button onClick={()=>{this.setState({cout: Number(0)})}}>
+                reiniciar
+            </button>
             </>
         )
     }
