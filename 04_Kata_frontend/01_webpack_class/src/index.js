@@ -3,6 +3,7 @@
 
 //ECMA
 import saludo from './saludo';
+import './style.scss';
 
 console.log('Este es un CLG');
 
