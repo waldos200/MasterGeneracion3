@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../../manejo-de-archivos-react/src/components/Layout';
+import Layout from '../components/Layout';
 
 
 const Contact = () => {

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+body {
+  font-family: ‘Open Sans’;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --brand-purple: #793c8e;
+  --brand-alt: #00a3ff;
+  --status-success: #04bc00;
+  --status-warning: #ffb800;
+  --status-danger: #cc0062;
+  --status-info: #4973de;
+  --neutro-00: #000000;
+  --neutro-25: #414141;
+  --neutro-50: #858585;
+  --neutro-75: #cdcdcd;
+  --neutro-99: #ffffff;
+}
+h1 {
+  font-size: 96px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 64px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.caption {
+  font-size: 14px;
+}
+.small {
+  font-size: 12px;
+}
+/* ------ Prueba ------- */
+.prueba {
+  color: var(--brand-purple);
+}
+/* ----- Header ------ */
+header {
+  background-color: var(--brand-purple);
+  min-height: 100vh; /* vh = viewport height */
+  color: var(--neutro-99);
+  padding: 40px;
+}
+header img {
+  width: 100%;
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+}
+.logo {
+  width: 140px;
+  border-radius: 0px;
+}
+/* ----- Section ------ */
+section {
+  padding: 40px;
+}
+section .example {
+  width: 100%;
+}
+/* ----- Buttons ------ */
+.button {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+  background-color: var(--neutro-00);
+  color: var(--neutro-99);
+  padding: 12px 32px;
+  border-radius: 8px;
+  transition: 300ms cubic-bezier(0, -0.41, 1, 1.43) all; /* duración CURVA los-elementos-a-cambiar */
+}
+.button:hover {
+  background: var(--status-danger);
+  padding: 12px 48px;
+}
+/* ----- Clients card ------ */
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.client-card {
+  width: 45%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.client-card img {
+  margin-bottom: -48px; /* no lo haga en producción */
+}
+/* ----- Footer ------ */
+footer {
+  background: var(--neutro-25);
+  color: var(--neutro-75);
+  text-align: center;
+  padding: 40px;
+}
+/* ---- ----*/
+.example {
+  background: linear-gradient(180deg, #ff0000 0%, #00ff38 50.31%, #0500ff 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
