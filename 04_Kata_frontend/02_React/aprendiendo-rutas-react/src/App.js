@@ -8,14 +8,15 @@ import {
 } from "react-router-dom";
 
 import Home from "./Home";
+import NotFound from "./NotFound";
+import NavBar from "./NavBar";
+import About from "./About";
 
-const NotFound = () => <h2>404 Not Found</h2>;
-
-function About() {
+/* function About() {
   return <h2>About page</h2>;
-}
+} */
 
-const NavBar = () => (
+/* const NavBar = () => (
   <nav>
     <ul>
       <li>
@@ -35,7 +36,7 @@ const NavBar = () => (
       </li>
     </ul>
   </nav>
-);
+); */
 
 function App() {
   // Ejemplo de componente switch explicado a metodo JS
