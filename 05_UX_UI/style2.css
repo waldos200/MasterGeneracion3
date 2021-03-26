@@ -1,0 +1,174 @@
+body {
+  font-family: 'Sansita', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --brand-blue: #00FFD1;
+  --brand-alt: #00a3ff;
+  --status-success: #04bc00;
+  --status-warning: #ffb800;
+  --status-danger: #cc0062;
+  --status-info: #4973de;
+  --neutro-00: #000000;
+  --neutro-25: #414141;
+  --neutro-50: #858585;
+  --neutro-75: #cdcdcd;
+  --neutro-99: #ffffff;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 22px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.bg-inicio {
+  background: var(--brand-blue);
+}
+
+.bg-iniciosesion {
+  background: var(--neutro-75);
+}
+
+/* Index */
+.texto {
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton1, .boton2 {
+  margin-top: 70px;
+  margin-left: 45px;
+}
+
+.catalogo, .inicioSesion {
+  height: 63px;
+  width: 288px;
+  border-radius: 50px;
+  background-color: var(--neutro-75);
+}
+
+a {
+  color: var(--neutro-00);
+  font-size: 36px;
+  text-decoration: none;
+}
+
+/* Inicio sesion */
+.formulario {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 80px;
+}
+
+.mail, .contrasena {
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.boton3, .boton4 {
+  margin-top: 100px;
+  margin-left: 45px;
+}
+
+.registrar, .iniciarSesion {
+  height: 63px;
+  width: 288px;
+  border-radius: 50px;
+  background-color: var(--neutro-99);
+}
+
+.navegador {
+  margin-top: 88px;
+  background-color: var(--neutro-99);
+}
+
+.circulo {
+  width: 40px;
+}
+
+/* Carrito */
+.carrito {
+  margin-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.tema {
+  background-color: var(--neutro-99);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.agregado {
+  height: 600px;
+}
+
+.navegador3 {
+  margin-top: 26px;
+  background-color: var(--neutro-99);
+}
+
+/* Catalogo */
+.navegador2 {
+  background-color: var(--neutro-99);
+  margin-top: 30px;
+}
+
+.cartas {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.Catalogo {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.textoCatalogo {
+  background-color: var(--neutro-99);
+  border-radius: 20px;
+  text-align: center;
+}
