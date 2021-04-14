@@ -6,6 +6,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import './App.css';
+import CicloDeVida from './components/CicloDeVida';
 import HolaMundo from './components/HolaClass';
 import HolaMundoClass from './components/HolaMundo';
 
@@ -24,7 +25,8 @@ function App() {
             </Route>
             <Route exact path="/class" component={HolaMundoClass}/>
             <Route exact path="/notFound" render={()=><NotFound/>}/>
-            <Redirect push to="/otFound" />
+            <Route exact path="/lifeCycle" component={CicloDeVida}/>
+            <Redirect push to="/notFound" />
           </Switch>
         </header>
       </div>
