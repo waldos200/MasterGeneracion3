@@ -10,7 +10,7 @@ class Reloj extends Component {
     }
 
     render() {
-        return <h3> {this.props.hora} </h3>
+        return <h3> Hora actual: {this.props.hora} </h3>
     }
 }
 
@@ -19,7 +19,8 @@ class CicloDeVida extends Component {
         super(props);
         console.log(0, 'El componente se inicializa, aun no esta en el DOM');
         this.state = {
-            hora: new Date().toLocaleTimeString()
+            hora: new Date().toLocaleTimeString(),
+            visible: false,
         }
     }
 
@@ -52,7 +53,19 @@ class CicloDeVida extends Component {
                     Ciclo de Vida
                 </h2>
                 <h3>
-                    Hora actual: <Reloj hora={this.state.hora}/>
+                    {this.state.visible && <Reloj hora={this.state.hora}/>}
+
+                    <button onClick={() => {
+                        this.setState({
+                            visible: true,
+                        })
+                    }}>Mostrar</button>
+
+                    <button onClick={() => {
+                        this.setState({
+                            visible: false,
+                        })
+                    }}>Ocultar</button>
                 </h3>
             </>
         );
