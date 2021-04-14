@@ -45,8 +45,8 @@ class CicloDeVida extends Component {
     }
 
     render() {
-        console.log(1, 'El componente se dibua en el DOM');
-        console.log(this.state.hora);
+        // console.log(1, 'El componente se dibua en el DOM');
+        // console.log(this.state.hora);
         return (
             <>
                 <h2>
