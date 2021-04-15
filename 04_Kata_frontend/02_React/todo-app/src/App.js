@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Character from './components/Characters';
+import CharacterHook from './components/CharactersHook';
 import CicloDeVida from './components/CicloDeVida';
 import CounterHook from './components/Counter';
 import HolaMundo from './components/HolaClass';
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/lifeCycle" component={CicloDeVida}/>
             <Route exact path="/characters" component={Character}/>
             <Route exact path="/counterHook" component={CounterHook}/>
+            <Route exact path="/characterHook" component={CharacterHook}/>
             <Redirect push to="/notFound" />
           </Switch>
         </header>
