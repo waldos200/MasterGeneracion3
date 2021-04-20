@@ -12,6 +12,7 @@ import CicloDeVida from './components/CicloDeVida';
 import CounterHook from './components/Counter';
 import HolaMundo from './components/HolaClass';
 import HolaMundoClass from './components/HolaMundo';
+import Reloj from './components/RelojWithHook';
 
 const NotFound = () => {
   return <h2> Not Found </h2>
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/characters" component={Character}/>
             <Route exact path="/counterHook" component={CounterHook}/>
             <Route exact path="/characterHook" component={CharacterHook}/>
+            <Route exact path="/relojWithHook" component={Reloj}/>
             <Redirect push to="/notFound" />
           </Switch>
         </header>
