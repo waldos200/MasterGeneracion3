@@ -3,7 +3,7 @@ import Todo from './Todo';
 
 const CreateTodo = (props) => {
 
-    const {newTodo, setNewTodo} = useState("");
+    const [newTodo, setNewTodo] = useState("");
     
     return (
         <div>
@@ -42,6 +42,12 @@ const Todos = () => {
         setTodos(myTodos)
     }
 
+    const deleteTodos = (index) => {
+        const myTodos = [...todos]
+        myTodos.splice(index, 1)
+        setTodos(myTodos)
+    }
+
     return(
         <>
             <h1>
@@ -56,6 +62,7 @@ const Todos = () => {
                         text={todo.text}
                         isComplete={todo.isComplete}
                         setComplete={setComplete}
+                        delete={deleteTodos}
                     />
                 })
             }
