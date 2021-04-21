@@ -1,8 +1,10 @@
+import './Todo.css'
+
 const Todo = (props) => {
-    const showComplete = (isComplete) => {
-        return isComplete
+    const showCompleted = (isCompleted) => {
+        return isCompleted
         ?{
-            TextDecorationLine: 'line-througth',
+            textDecorationLine: 'line-through',
             marginLeft: '20px'
         }
         :{
@@ -11,14 +13,12 @@ const Todo = (props) => {
     }
 
     return ( 
-        <div>
+        <div className="todo">
             <button type="button" style={{marginRight: "10px"}} onClick={() => props.delete(props.idex)}>
                 Borrar
             </button>
-            <input type="checkbox" checked={props.isComplete} onChange={() => {props.setComplete(props.isComplete)}}/>
-            <span>
-                {props.text}
-            </span>
+            <input type="checkbox" checked={props.isCompleted} onChange={() => {props.setCompleted(props.index)}}/>
+            <span style={ showCompleted(props.isCompleted)}>{props.text}</span>
         </div>
     )
 }
