@@ -19,25 +19,25 @@ const Todos = () => {
     const [todos, setTodos] = useState([
         {
             text: 'Repasar ReactHooks',
-            isComplete: false
+            isCompleted: false
         },
         {
             text: 'Kata JS',
-            isComplete: true
+            isCompleted: true
         }
     ]);
     
-    const setComplete = (index) => {
+    const setCompleted = (index) => {
         const myTodos = [...todos]
-        const isComplete = myTodos[index].isComplete
-        myTodos[index].isComplete = !isComplete
+        const isCompleted = myTodos[index].isCompleted
+        myTodos[index].isCompleted = !isCompleted
         setTodos(myTodos)
     }
     
     const addTodo = (todoText) => {
         const myTodos = [
             ...todos, 
-            {text: todoText, isComplete: false}
+            {text: todoText, isCompleted: false}
         ]
         setTodos(myTodos)
     }
@@ -60,8 +60,8 @@ const Todos = () => {
                         key={index}
                         index={index}
                         text={todo.text}
-                        isComplete={todo.isComplete}
-                        setComplete={setComplete}
+                        isCompleted={todo.isCompleted}
+                        setCompleted={setCompleted}
                         delete={deleteTodos}
                     />
                 })
