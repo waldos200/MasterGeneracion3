@@ -7,6 +7,18 @@ const Tacos = ({taco}) => {
         <p>
             {taco.base_layer.name}
         </p>
+        <p>
+            {taco.mixin.name}
+        </p>
+        <p>
+            {taco.condiment.name}
+        </p>
+        <p>
+            {taco.seasoning.name}
+        </p>
+        <p>
+            {taco.shell.name}
+        </p>
         </>
     )
 
