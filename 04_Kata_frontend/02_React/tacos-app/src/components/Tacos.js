@@ -4,21 +4,48 @@ const Tacos = ({taco}) => {
 
     return(
         <>
-        <p>
-            {taco.base_layer.name}
-        </p>
-        <p>
-            {taco.mixin.name}
-        </p>
-        <p>
-            {taco.condiment.name}
-        </p>
-        <p>
-            {taco.seasoning.name}
-        </p>
-        <p>
-            {taco.shell.name}
-        </p>
+        <table>
+            <tr>
+                <td> 
+                    Nombre Taco: 
+                </td>
+                <td>
+                    {taco.base_layer.name}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nombre del mix: 
+                </td>
+                <td>
+                    {taco.mixin.name}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nombre Condimento: 
+                </td>
+                <td>
+                    {taco.condiment.name}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nombre Sasonador: 
+                </td>
+                <td>
+                    {taco.seasoning.name}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    nombre shell: 
+                </td>
+                <td>
+                    {taco.shell.name}
+                </td>
+            </tr>
+        </table>
         </>
     )
 
