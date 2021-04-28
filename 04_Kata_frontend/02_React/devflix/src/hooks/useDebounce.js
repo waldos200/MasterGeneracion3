@@ -17,4 +17,4 @@ const useDebounce = ( value, delay ) => {
     return debounceValue
 }
 
-export { useDebounce }
+export default useDebounce
