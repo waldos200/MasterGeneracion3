@@ -8,8 +8,8 @@ const Peticiones = () => {
     const [ results, setResults ] = useState([]);
     const searchTerm = useDebounce(search, 500);
 
-    const makeSearch = (s) => {
-        searchShow(s).then((response) => {
+    const makeSearch = (term) => {
+        searchShow(term).then((response) => {
             setResults(response.data)
         }).catch(() => {
             setResults([])
