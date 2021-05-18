@@ -1,8 +1,23 @@
+.result-list{
+    /* flex-wrap: wrap; */
+    /* width: 20%; */
+    /* display: flex; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-content: center; */
+
+}
+
 .carta{
-    border: 1px solid black;
-    width: 20%;
+    border: 2px solid black;
+    width: 40%;
+    margin: 20px;
+    border-radius: 15px;
 }
 
 img {
     width: 100%;
+    border-radius: 15px;
 }
