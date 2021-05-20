@@ -1,17 +1,19 @@
 import React from 'react';
-import { useCharacterContext } from '../context/CharacterContext';
+import DetallesCharacter from './DetallesCharacter';
+import ListCharacter from './ListCharacter';
+import '../index.css';
 
-const Character = () =>{
-    const {lista} = useCharacterContext();
-    console.log(lista);
-    return(
+const Character = () => {
+    return (
         <>
-            <h1>Characters</h1>
-            {lista.length > 0 && lista.map((character) => {
-                return <h5 key={character.name}>{character.name}</h5>
-            })}
+            <div className="izquierda">
+                <ListCharacter/>
+            </div>
+            <div className="derecha">
+                <DetallesCharacter/>
+            </div>
         </>
-    ) 
+    )
 }
 
 export default Character;
