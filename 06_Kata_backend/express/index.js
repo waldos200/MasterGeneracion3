@@ -12,7 +12,18 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     res.send({
         sever: req.hostname,
-        route: req.route
+        route: req.route.path
+    });
+});
+
+app.post('/send-message', (req, res) => {
+    res.send({
+        message: {
+            from: 'correo@yes.com',
+            to: 'correo2@yes.com',
+            body: 'mensaje de prueba',
+            dateInfo: Date.now()
+        }
     });
 });
 
