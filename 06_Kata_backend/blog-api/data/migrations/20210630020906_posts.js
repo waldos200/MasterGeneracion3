@@ -1,5 +1,5 @@
-
-exports.up = function(knex) {
+// Este archivo se crea poniengo en la consola 'knex migrate:make posts'
+exports.up = function(knex) { //knex migrate:latest (en la consola)
   return knex.schema.createTable('posts', function(table){
       table.increments();
       table.string('title', 200);
@@ -10,6 +10,6 @@ exports.up = function(knex) {
   });
 };
 
-exports.down = function(knex) {
+exports.down = function(knex) { //knex migrate:rollback (en la consola)
   return knex.schema.dropTableIfExist('posts');
 };
