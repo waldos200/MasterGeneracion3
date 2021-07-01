@@ -8,7 +8,7 @@ module.exports = {
     
     create: (data) => {
         // Va a crear un usuario
-        return db('users').insert(data);
+        return db('users').insert(data, ['id', 'email', 'first_name']);
     },
     
     findOne : (id) => {
@@ -18,7 +18,7 @@ module.exports = {
 
     update: (id, data) => {
         // Va a modificar un usuario
-        return db('users').where({id}).update(data);
+        return db('users').where({id}).update(data, ['id', 'email', 'first_ame', 'last_name', 'gender', 'birth_date']);
     },
 
     delete: (id) => {

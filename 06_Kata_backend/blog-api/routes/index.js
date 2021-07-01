@@ -1,13 +1,24 @@
 const express = require('express');
 const router = express.Router();
-const { fetch, retrieve, add, modify, eliminate } = require('../controllers/users');
+const UserController = require('../controllers/users');
+const PostController = require('../controllers/posts');
 
 // user routes
 
-router.get('/users', fetch);
-router.get('/users/:id', retrieve);
-router.post('/users', add);
-router.put('/users/:id', modify);
-router.delete('/users/:id', eliminate);
+router.get('/users', UserController.fetch);
+router.get('/users/:id', UserController.retrieve);
+router.post('/users', UserController.add);
+router.put('/users/:id', UserController.modify);
+router.delete('/users/:id', UserController.eliminate);
+
+module.exports = router;
+
+// posts routes
+
+router.get('/posts', PostController.fetch);
+router.get('/posts/:id', PostController.retrieve);
+router.post('/posts', PostController.add);
+router.put('/posts/:id', PostController.modify);
+router.delete('/posts/:id', PostController.eliminate);
 
 module.exports = router;
