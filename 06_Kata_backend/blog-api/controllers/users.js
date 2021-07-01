@@ -31,7 +31,7 @@ module.exports = {
 
     eliminate: (req, res) => {
         remove(req.params.id).then( () => {
-            res.status(204)
+            res.status(204).send()
         } ).catch( () => {
             res.status(400).json(error)
         } )
