@@ -15,6 +15,7 @@ module.exports = router;
 
 // posts routes
 
+router.get('/posts/users', PostController.populatedPosts);
 router.get('/posts', PostController.fetch);
 router.get('/posts/:id', PostController.retrieve);
 router.post('/posts', PostController.add);
