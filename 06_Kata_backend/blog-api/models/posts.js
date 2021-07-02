@@ -5,6 +5,10 @@ class Post extends Model{
     constructor(){
         super('posts')
     }
+
+    populateUser(){
+        return this.db.innerJoin('users', 'posts.user_id', '=', 'user.id');
+    }
 }
 
 module.exports = Post;
