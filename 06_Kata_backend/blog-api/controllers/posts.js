@@ -41,5 +41,12 @@ module.exports = {
         } ).catch( () => {
             res.status(400).json(error)
         } )
+    },
+
+    populatedPosts: (req, res) => {
+        const postObj = new Post();
+        postObj.populateUser().then( (posts) => {
+            res.status(200).json(posts)
+        } )
     }
 };
