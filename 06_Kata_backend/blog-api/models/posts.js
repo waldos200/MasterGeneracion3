@@ -7,7 +7,7 @@ class Post extends Model{
     }
 
     populateUser(){
-        return this.db.innerJoin('users', 'posts.user_id', '=', 'user.id');
+        return this.db.innerJoin('users', 'posts.user_id', '=', 'users.id');
     }
 }
 
