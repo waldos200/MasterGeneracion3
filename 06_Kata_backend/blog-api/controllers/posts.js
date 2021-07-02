@@ -1,15 +1,15 @@
 // const { findAll, findOne, create, update, delete:remove } = require('../models/posts');
 const Post = require('../models/posts');
 
-const post = new Post();
+const postObj = new Post();
 
 module.exports = {
     fetch: (req, res) => {
-        post.findAll().then( (posts) => res.status(200).json(posts) )
+        postObj.findAll().then( (posts) => res.status(200).json(posts) )
     },
 
     retrieve: (req, res) => {
-        post.findOne(req.params.id).then( (post) => {
+        postObj.findOne(req.params.id).then( (post) => {
             res.status(200).json(post)
         } ).catch( (error) => {
             res.status(400).json(error)
@@ -17,7 +17,7 @@ module.exports = {
     },
 
     add: (req, res) => {
-        post.create(req.body).then( (post) => {
+        postObj.create(req.body).then( (post) => {
             res.status(201).json(post)
         } ).catch( (error)=> {
             res.status(400).json(error)
@@ -25,7 +25,7 @@ module.exports = {
     },
 
     modify: (req, res) => {
-        post.update(req.params.id, req.body).then( (post) => {
+        postObj.update(req.params.id, req.body).then( (post) => {
             res.status(200).json(post)
         } ).catch ( (error) => {
             res.status(400).json(error)
@@ -33,7 +33,7 @@ module.exports = {
     }, 
 
     eliminate: (req, res) => {
-        post.delete(req.params.id).then( () => {
+        postObj.delete(req.params.id).then( () => {
             res.status(204).send()
         } ).catch( () => {
             res.status(400).json(error)
