@@ -1,9 +1,18 @@
 const db = require('../data/db');
 const Model = require('./Model');
+const Populate = require('knex-populate');
 
 class User extends Model{
     constructor(){
         super('users')
+    }
+
+    populatePosts(id){
+        return Populate(db, 'users')
+            .findById(id)
+            .populate('posts', 'user_id', 'post')
+            .limitTo(10)
+            .exec()
     }
 }
 

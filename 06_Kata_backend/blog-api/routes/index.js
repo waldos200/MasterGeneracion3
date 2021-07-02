@@ -10,6 +10,7 @@ router.get('/users/:id', UserController.retrieve);
 router.post('/users', UserController.add);
 router.put('/users/:id', UserController.modify);
 router.delete('/users/:id', UserController.eliminate);
+router.get('users/:id/posts', UserController.populatedUser);
 
 module.exports = router;
 
