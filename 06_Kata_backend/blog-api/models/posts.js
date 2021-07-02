@@ -1,13 +1,18 @@
 // const db = require('../data/db');
 const Model = require('./Model');
-
+const Populate =require('knex-populate');
+const db = require('../data/db');
 class Post extends Model{
     constructor(){
         super('posts')
     }
 
     populateUser(){
-        return this.db.innerJoin('users', 'posts.user_id', '=', 'users.id').select('posts.*','users.first_name', 'users.last_name');
+        /* return this.db.innerJoin('users', 'posts.user_id', '=', 'users.id').select('posts.*','users.first_name', 'users.last_name'); */
+        return Populate(db, 'posts')
+            .find()
+            .populate('users', 'user_id', 'user')// .populate(tabla de referenca, foreign_key, alias)
+            .exec()
     }
 }
 
