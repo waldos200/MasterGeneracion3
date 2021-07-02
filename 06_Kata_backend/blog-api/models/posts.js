@@ -1,6 +1,15 @@
-const db = require('../data/db');
+// const db = require('../data/db');
+const Model = require('./Model');
 
-module.exports = {
+class Post extends Model{
+    constructor(){
+        super('posts')
+    }
+}
+
+module.exports = Post;
+
+/* module.exports = {
     findAll: () => {
     return db('posts');
     },
@@ -20,4 +29,4 @@ module.exports = {
     delete: (id) => {
         return db('posts').where({id}).del();
     }
-};
+}; */
