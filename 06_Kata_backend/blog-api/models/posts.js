@@ -18,6 +18,10 @@ class Post extends Model{
     searchByCategory(category){
         return this.db.where( {category} );
     }
+
+    searchInBody(search){
+        return this.db.where('body', 'like', `%${search}%`);
+    }
 }
 
 module.exports = Post;
