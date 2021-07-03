@@ -4,6 +4,7 @@ const Post = require('../models/posts');
 module.exports = {
     fetch: (req, res) => {
         const postObj = new Post();
+        if (req.query.category) return postObj.searchByCategory(req.query.category).then(result => res.status(200).json(result))
         postObj.findAll().then( (posts) => res.status(200).json(posts) )
     },
 

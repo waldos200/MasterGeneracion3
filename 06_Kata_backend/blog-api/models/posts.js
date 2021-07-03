@@ -14,6 +14,10 @@ class Post extends Model{
             .populate('users', 'user_id', 'user')// .populate(tabla de referenca, foreign_key, alias)
             .exec()
     }
+
+    searchByCategory(category){
+        return this.db.where( {category} );
+    }
 }
 
 module.exports = Post;
