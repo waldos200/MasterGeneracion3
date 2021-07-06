@@ -1,5 +1,5 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require('express'); // para el servidor 
+const bodyParser = require('body-parser'); // parsear las petciones de una ruta y guarda el body (leer corrctamente)
 const routes = require('./routes');
 const { errors } = require('celebrate');
 
