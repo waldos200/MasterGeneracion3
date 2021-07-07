@@ -1,10 +1,21 @@
 // const { findAll, findOne, create, update, delete:remove } = require('../models/users');
 const User = require('../models/users');
+const hashPassword = require('../utils/hashPassword');
 
 module.exports = {
     fetch: (req, res) => {
         const userObj = new User();
         userObj.findAll().then( (users) => res.status(200).json(users) )
+    },
+
+    login: async (req, res) => {
+        try {
+            const { userFound } = await authenticate(req.body)
+            const token = generateJWT(userFound)
+            res.status(200).send({token});
+        } catch (error) {
+            res.status(400).json(error.message)
+        } 
     },
 
     retrieve: (req, res) => {
@@ -17,6 +28,7 @@ module.exports = {
     },
 
     add: (req, res) => {
+        req.body.password = await hashPassword(req.body.password);
         const userObj = new User();
         userObj.create(req.body).then( (result) => {
             res.status(201).json(result)
@@ -26,6 +38,7 @@ module.exports = {
     },
 
     modify: (req, res) => {
+        req.body.password = await hashPassword(req.body.password);
         const userObj = new User();
         userObj.update(req.params.id, req.body).then( (result) => {
             res.status(200).json(result)

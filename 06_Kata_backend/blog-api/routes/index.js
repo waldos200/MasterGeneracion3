@@ -11,14 +11,16 @@ const userCreateValidator = {
         last_name: Joi.string().required(),
         email: Joi.string().email().required(),
         birth_date: Joi.date().required(),
-        gender: Joi.string().valid('male', 'female').required()
+        gender: Joi.string().valid('male', 'female').required(),
+        password: Joi.string().required(),
     } // Schema de validacion
 }
 
 router.get('/users', UserController.fetch);
 router.get('/users/:id', UserController.retrieve);
+router.post('/user/login', UserController.login);
 router.post('/users', celebrate(userCreateValidator), UserController.add);
-router.put('/users/:id', UserController.modify);
+router.put('/users/:id', celebrate(userCreateValidator), UserController.modify);
 router.delete('/users/:id', UserController.eliminate);
 router.get('users/:id/posts', UserController.populatedUser);
 
