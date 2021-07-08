@@ -3,6 +3,7 @@ const { celebrate, Joi, Segments } = require('celebrate');
 const router = express.Router();
 const UserController = require('../controllers/users');
 const PostController = require('../controllers/posts');
+const verify = require('../middlewares/verify');
 
 // user routes
 const userCreateValidator = {
@@ -16,7 +17,7 @@ const userCreateValidator = {
     } // Schema de validacion
 }
 
-router.get('/users', UserController.fetch);
+router.get('/users', verify, UserController.fetch);
 router.get('/users/:id', UserController.retrieve);
 router.post('/user/login', UserController.login);
 router.post('/users', celebrate(userCreateValidator), UserController.add);
