@@ -16,7 +16,7 @@ class Post extends Model{
     }
 
     searchByCategory(category){
-        return this.db.where( {category} )
+        return this.db.where( {category} );
     }
 
     searchInBody(search){
